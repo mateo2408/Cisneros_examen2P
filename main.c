@@ -49,3 +49,46 @@ void obtener_totales(struct insumo *insumo) {
   printf("Total ingresos: %d\n", total_ingresos);
   printf("Total egresos: %d\n", total_egresos);
 }
+
+int main() {
+  struct insumo insumos[NUM_INSUMOS];
+  int opcion;
+
+  // Inicializar los datos random
+  srand(time(NULL));
+  for (int i = 0; i < NUM_INSUMOS; i++) {
+    generar_datos(&insumos[i]);
+  }
+
+  do {
+    // Mostrar el menú
+    printf("1. Imprimir detalle\n2. Obtener totales\n3. Salir\n");
+    printf("Ingrese una opción: ");
+    scanf("%d", &opcion);
+
+    switch (opcion) {
+      case 1:
+        // Imprimir el detalle de ingresos y egresos
+        for (int i = 0; i < NUM_INSUMOS; i++) {
+            printf("Insumo: %d\n", i+1);
+          imprimir_detalle(&insumos[i]);
+        }
+        break;
+      case 2:
+        // Obtener el total de ingresos y egresos
+        for (int i = 0; i < NUM_INSUMOS; i++) {
+          printf("Insumo: %d\n", i+1);
+          obtener_totales(&insumos[i]);
+        }
+        break;
+      case 3:
+        // Salir
+        break;
+      default:
+        // Opción no válida
+        printf("Opción no válida\n");
+    }
+  } while (opcion != 3);
+
+  return 0;
+}
