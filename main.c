@@ -1,6 +1,6 @@
 //Mateo Cisneros
 //12/12/2023
-//Leer README para datos de prueba e instrucciones para correr el programa
+//Leer README para ejercicio
 
 #include <stdio.h>
 #include <stdlib.h>
