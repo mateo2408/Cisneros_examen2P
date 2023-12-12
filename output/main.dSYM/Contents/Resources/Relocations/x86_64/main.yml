@@ -1,0 +1,10 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/mateocisneros/VisualCode/Segundo_Semestre/Progreso_2/Cisneros_examen2P/output/main'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _generar_datos, symObjAddr: 0x0, symBinAddr: 0x100003B70, symSize: 0x70 }
+  - { offsetInCU: 0x41, offset: 0x41, size: 0x8, addend: 0x0, symName: _generar_datos, symObjAddr: 0x0, symBinAddr: 0x100003B70, symSize: 0x70 }
+  - { offsetInCU: 0x81, offset: 0x81, size: 0x8, addend: 0x0, symName: _imprimir_detalle, symObjAddr: 0x70, symBinAddr: 0x100003BE0, symSize: 0x70 }
+  - { offsetInCU: 0xC1, offset: 0xC1, size: 0x8, addend: 0x0, symName: _obtener_totales, symObjAddr: 0xE0, symBinAddr: 0x100003C50, symSize: 0xA0 }
+  - { offsetInCU: 0x10F, offset: 0x10F, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x180, symBinAddr: 0x100003CF0, symSize: 0x1E0 }
+...
